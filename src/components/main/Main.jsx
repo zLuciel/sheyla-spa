@@ -4,8 +4,15 @@ import BtSobremi from "../buttoms/sobremi/BtSobremi";
 import "./Main.css";
 const mainspa = require.context(`../../assets/main-spa`, true);
 const Main = () => {
-
-
+   /*const [cont,setCont] = useState(0);*/
+  /* useEffect(()=>{
+         const video = document.querySelector(".imagen-main2")
+         const updateProgress = ()=> {
+            console.log("termino");
+            setCont(cont + 1)
+        }
+        video.addEventListener("timeupdate", updateProgress)
+    },[cont])*/
 
   return (
     <main className="main-principal-grid">
