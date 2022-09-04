@@ -1,13 +1,16 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
 import "./Header.css"
+import {BsInstagram} from "react-icons/bs"
+import {FaFacebookSquare,FaTiktok} from "react-icons/fa"
+import logo from "../../assets/img/Sheyla-logo.png"
 export const Header = () => {
   return (
     <>
       <header className="header">
         <nav className="nav">
             <div className="nav-logo">
-                logo
+           <img src={logo} alt="logo" />
             </div>
             <ul>
                 <li><a href="#0">Inicio</a></li>
@@ -17,7 +20,9 @@ export const Header = () => {
                 <li><a href="#4">Fotos</a></li>
             </ul>
             <div className="nav-redes-sociales">
-                redes socales
+                <BsInstagram/>
+                <FaFacebookSquare/>
+                <FaTiktok/>
             </div>
         </nav>
       </header>

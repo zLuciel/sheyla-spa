@@ -1,5 +1,5 @@
 //import {useState,useEffect} from "react";
-import { Buttom2 } from "../buttoms/Buttom2/Buttom2";
+//import { Buttom2 } from "../buttoms/Buttom2/Buttom2";
 import BtSobremi from "../buttoms/sobremi/BtSobremi";
 import "./Main.css";
 const mainspa = require.context(`../../assets/main-spa`, true);
@@ -25,8 +25,8 @@ const Main = () => {
           consultas.
         </p>
         <div className="container-buttom-main">
-          <BtSobremi/>
-          <Buttom2/>
+          <BtSobremi text={"Reservar cita"} />
+          <BtSobremi text={"Sobre mi"} />
         </div>
       </div>
       <div className="main-bolitas">
