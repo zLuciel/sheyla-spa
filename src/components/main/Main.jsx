@@ -1,23 +1,24 @@
-//import {useState,useEffect} from "react";
+import {useState,useEffect} from "react";
 //import { Buttom2 } from "../buttoms/Buttom2/Buttom2";
 import BtSobremi from "../buttoms/sobremi/BtSobremi";
 import "./Main.css";
 const mainspa = require.context(`../../assets/main-spa`, true);
 const Main = () => {
-   /*const [cont,setCont] = useState(0);*/
-  /* useEffect(()=>{
-         const video = document.querySelector(".imagen-main2")
-         const updateProgress = ()=> {
-            console.log("termino");
-            setCont(cont + 1)
-        }
-        video.addEventListener("timeupdate", updateProgress)
-    },[cont])*/
+   const [cont,setCont] = useState(0);
+  useEffect(()=>{
+    const videoxd = document.getElementById("videomain")
+
+     videoxd.addEventListener("ended",update )
+   
+    })
+    function update () {
+      cont === 3 ? setCont(0) : setCont(cont + 1)
+     }
 
   return (
     <main className="main-principal-grid">
       {/*<img src={mainspa(`./main1.jpg`)} alt="spa" className="imagen-main" />*/}
-      <video src={mainspa("./masaje.mp4")} className="imagen-main2" autoPlay muted loop></video>
+      <video id="videomain" src={mainspa(`./masaje${cont}.mp4`)} className="imagen-main2" autoPlay muted ></video>
       <div className="main-info">
         <h1>La mejor experiencia de belleza <br /> con <u> Sheyla Maza</u></h1>
         <p>
