@@ -1,0 +1,48 @@
+.main-principal-grid{
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    position: relative;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-areas: "main-info main-bolitas";
+}
+.imagen-main{
+    z-index: -1;
+    opacity: 0.79;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/**syles main info*/
+.main-info{
+    margin-left: 70px;
+    grid-area: main-info;
+    /*border: 1px solid greenyellow;*/
+    align-self: center;
+    justify-self: start;/**Centrado cuando usamos grid*/
+    width: max-content;
+}
+.main-info > h1{
+    font-size: 3rem;
+}
+.main-info > h1 > u{
+    color: var(--grenyellow);
+}
+/**syles main bolitas xd*/
+.main-bolitas{
+    grid-area: main-bolitas;
+    align-self: center;
+    justify-self: start;
+}
+.main-bolitas > div{
+    cursor: pointer;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.main-bolitas > div:hover{
+    transform: scale(1.5);
+    background: var(--grenyellow);
+}
