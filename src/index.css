@@ -2,12 +2,14 @@
  margin: 0;
  padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 :root{
   --dark:linear-gradient(90deg, #152331 0%, #000000 100%);
   --grenyellow: greenyellow;
   --letra-peque: white;
   --letra1:'Oswald';
+  --letra2:'Trykker';
 }
 body{
   min-height: 100vh;

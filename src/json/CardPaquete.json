@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "titleimg": "Post - Liposucción Fibrosis",
+        "img":"https://saratov.laserfairy.pro/assets/images/uslugi/massage/foto%20proc/2-mas-800.jpg",
+        "titulo1":"Drenaje Linfático",
+        "titulo2":"Radiofrecuencia",
+        "titulo3":"Ultrasonido",
+        "contenido1":"La finalidad principal del drenaje es eliminar líquidos, mejorar la visibilidad de la piel y estimular el sistema linfático. ",
+        "contenido2":"La radiofrecuencia es una técnica utilizada en medicina estética para combatir la flacidez y la celulitis y que consiste en la aplicación de radiaciones electromagnéticas",
+        "contenido3":"El ultrasonido es un examen médico no invasivo que ayuda a los médicos a diagnosticar y tratar condiciones médicas.",
+        "enlace":""
+    },
+    {
+        "id":2,
+        "titleimg": "Pack - Redcutor",
+        "img":"https://cache3.youla.io/files/images/720_720_out/5e/78/5e78ae77b5fc2d454f0cc6f0.jpg",
+        "titulo1":"Ondas Rusas",
+        "titulo2":"Masaje Reductores",
+        "titulo3":"Carboxiterapia",
+        "contenido1":"​Este tratamiento se realiza mediante electroestimulación a las terminales nerviosas neuromusculares, haciendo que la masa muscular se contraiga rítmicamente y, de esta manera, proporcionarle firmeza y desarrollo al músculo.",
+        "contenido2":"El objetivo principal del masaje reductor es reducir la acumulación de grasa en zonas específicas de nuestro cuerpo, como glúteos, abdomen, caderas, cintura o piernas.",
+        "contenido3":"La finalidad de la carboxiterapia es mejorar la microcirculación en la zona y la oxigenación de los tejidos.",
+        "enlace":""
+    },
+    {
+        "id":3,
+        "titleimg": "Plasma con dermapen -No invasivo",
+        "img":"https://dr-zara.ru/images/spsimpleportfolio/mezoterapiya-litsa-shei-i-dekolte/15_600x400.jpg",
+        "titulo1":"Limpieza Facial Profunda",
+        "titulo2":"Máscara de Vampiro",
+        "titulo3":"Máscara de Colageno",
+        "contenido1":"La limpieza de cutis es más que recomendable para mantener la piel de la cara en perfectas condiciones y eliminar las impurezas que en ella se acumulan por la acción de la contaminación ambiental o los restos de maquillaje.",
+        "contenido2":"consiste en extraer la sangre de un paciente, y centrifugarla para sacar el plasma que contiene plaquetas y factores de crecimiento, y luego volver a inyectarla en la cara.",
+        "contenido3":"Las mascarillas de colágeno son el producto perfecto para que tu piel se mantenga tersa, hidratada y radiante.",
+        "enlace":""
+    }
+]

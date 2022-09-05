@@ -1,11 +1,12 @@
 import {useState,useEffect} from "react";
-//import { Buttom2 } from "../buttoms/Buttom2/Buttom2";
+import InfoMain from "../buttoms/InfoMain/InfoMain";
 import BtSobremi from "../buttoms/sobremi/BtSobremi";
 import "./Main.css";
+import { IoTime } from "react-icons/io5";
+import { RiMapPin2Fill} from "react-icons/ri";
 const mainspa = require.context(`../../assets/main-spa`, true);
 const Main = () => {
    const [cont,setCont] = useState(0);
-   //const [greenbol,setGreenbol] = useState(greenyellow : white);
   useEffect(()=>{
     const videoxd = document.getElementById("videomain")
 
@@ -33,7 +34,10 @@ const Main = () => {
           <BtSobremi text={"Reservar cita"} />
           <BtSobremi text={"Sobre mi"} />
         </div>
-        
+       <div className="buttom-info-main">
+          <InfoMain  info={"9.00 AM A 1.00 PM 3.00 PM A 7.00 PM"} icon={<IoTime className="ico-time"/> } />
+          <InfoMain  info={"JR .SOL.ORO 7028"} icon={<RiMapPin2Fill className="ico-map"/>} />
+        </div>
       </div>
       <div className="main-bolitas">
         <div style={{background:video0}} className="bol-1" onClick={()=> setCont(0)}></div>

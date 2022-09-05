@@ -5,7 +5,8 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: 95% 5%;
-    grid-template-areas: "main-info main-bolitas";
+    grid-template-areas: 
+    "main-info main-bolitas";
 }
 /*.imagen-main{
     z-index: -1;
@@ -68,4 +69,12 @@
  display: flex;
  justify-content: center;
  align-items: center;
+}
+.buttom-info-main{
+   /* border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    padding-top: 20px;
 }

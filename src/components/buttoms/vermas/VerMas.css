@@ -1,0 +1,25 @@
+.ver-mas-paquete {
+    padding: 1em 2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .ver-mas-paquete:hover {
+    background-color: greenyellow;
+    box-shadow: 0px 15px 20px rgba(251, 255, 4, 0.288);
+    transform: translateY(-7px);
+  }
+  
+  .ver-mas-paquete:active {
+    transform: translateY(-1px);
+  }

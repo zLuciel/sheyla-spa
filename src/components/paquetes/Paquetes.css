@@ -1,0 +1,7 @@
+.container-paquete{
+ height: 1500px;
+ width: 78%;
+ margin: auto;
+ position: relative;
+ font-family: var(--letra1);
+}
