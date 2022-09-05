@@ -1,14 +1,14 @@
 import React from "react";
 import VerMas from "../buttoms/vermas/VerMas";
 import "./CardPaquete.css"
-const CardPaquete = ({reverse,jsoninfo}) => {
+const CardPaquete = ({reverse,jsoninfo,img}) => {
     const reves = reverse ? "plan-card-grid-reverse" :"plan-card-grid";
   return (
     <div className={reves}>
       <div className="colum1-img-title">
         <h1>{jsoninfo.titleimg}</h1>
         <div className="container-img-card">
-          <img src={jsoninfo.img} alt="belleza" />
+          <img src={img} alt="belleza" />
         </div>
       </div>
       <div className="colum2-grid-info">
