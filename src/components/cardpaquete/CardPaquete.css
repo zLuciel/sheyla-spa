@@ -7,87 +7,33 @@
 .container-paquete > p{
     margin-bottom: 30px;
 }
-.plan-card-grid{
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "title-img info-card";
+/** lode arriba es el titulo de plan paquetes*/
+/**animaciones styles*/
+.animation-left{
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
-.plan-card-grid-reverse{
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "info-card title-img ";
-}
-.colum1-img-title{
-    grid-area: title-img;
-}
-.colum1-img-title > h1{
-    text-align: center;
-    margin-bottom: 15px;
-    color: var(--grenyellow);
-}
-.container-img-card{
-    width: 530px;
-    height: 280px;
-    border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
-}
-.container-img-card > img{
-   width: 100%;
-   height: 100%;
-   border-radius: 10px;
-}
-.colum2-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-.colum2-grid-info{
-    grid-area: info-card;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.colum1-img-title,.colum2-info{
-    justify-self: center;
-    align-self: center;
-}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
 
-.div-bolitas > div{
-    border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    background: gray;
-    margin: 10px;
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
-.info-card-preciso{
-    width: 400px;
+.animation-rigth{
+    animation: myAnim2 1s ease 0s 1 normal forwards;
 }
-.info-card-preciso > p{
-    font-size: 0.8rem;
-    margin-bottom: 6px;
-    font-family: var(--letra2);
-}
-.info-card-preciso > h1,.pack-num > h3{
-    color: var(--grenyellow);
-}
-.pack-num > h2{
-    text-align: center;
-    color: gray;
-    font-size: 2rem;
-}
-.info-card-preciso > h1{
-    font-size: 1.2rem;
-}
-.pack-num > h3{
-    font-size: 1.5rem;
-}
-.info-link-buttom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

@@ -1,5 +1,6 @@
-.cta {
-    position: relative;
+import styled from "styled-components";
+export const ReservarCita = styled.button`
+ position: relative;
     margin-right: 10px;
     padding: 12px 18px;
     transition: all 0.2s ease;
@@ -7,22 +8,19 @@
     background: none;
     cursor: pointer;
     font-family: inter;
-   }
-   
-   .cta:before {
-    content: "";
+    :before{
+        content: "";
     position: absolute;
     top: 0;
     left: 0;
     display: block;
     border-radius: 50px;
-    background:greenyellow;
+    background:  ${({theme}) => theme.hover};
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
-   }
-   
-   .cta span {
+    }
+    span {
     position: relative;
     font-family: inter;
     font-size: 18px;
@@ -30,8 +28,7 @@
     letter-spacing: 0.05em;
     color: black;
    }
-   
-   .cta svg {
+   svg {
     position: relative;
     top: 0;
     margin-left: 10px;
@@ -43,16 +40,14 @@
     transform: translateX(-5px);
     transition: all 0.3s ease;
    }
-   
-   .cta:hover:before {
+   :hover:before {
     width: 100%;
-    background: greenyellow;
+    background:  ${({theme}) => theme.hover};
    }
-   
-   .cta:hover svg {
+   :hover svg {
     transform: translateX(0);
    }
-   
-   .cta:active {
+   :active {
     transform: scale(0.95);
    }
+`

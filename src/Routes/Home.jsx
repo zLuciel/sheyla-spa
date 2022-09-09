@@ -1,12 +1,18 @@
 import React from 'react'
-import Main from '../components/main/Main'
-import { Paquetes } from '../components/paquetes/Paquetes'
+
+import {Header,Main,Paquetes,Themes,Vitamina} from "../components"
+import { ThemeProvider } from 'styled-components'
+
 
 const Home = () => {
   return (
     <>
-     <Main/>
-     <Paquetes/>
+    <ThemeProvider theme={Themes["dark"]}>
+      <Header/>
+      <Main/>
+      <Paquetes/>
+      <Vitamina/>
+    </ThemeProvider>
     </>
   )
 }

@@ -1,15 +1,15 @@
 import {useState,useEffect} from "react";
 import InfoMain from "../buttoms/InfoMain/InfoMain";
 import BtSobremi from "../buttoms/sobremi/BtSobremi";
-import "./Main.css";
 import { IoTime } from "react-icons/io5";
 import { RiMapPin2Fill} from "react-icons/ri";
+import { ButtomInfoMain, ButtomMain, MainBolitas, MainInfo,MainPrincipalGrid } from "../cssjs/MainStyle";
 const mainspa = require.context(`../../assets/main-spa`, true);
 const Main = () => {
+
    const [cont,setCont] = useState(0);
   useEffect(()=>{
     const videoxd = document.getElementById("videomain")
-
      videoxd.addEventListener("ended",updatevideo )
     })
 
@@ -21,31 +21,30 @@ const Main = () => {
      const video2 = cont === 2 ? "greenyellow" : "white"
      const video3 = cont === 3 ? "greenyellow" : "white"
   return (
-    <main className="main-principal-grid">
-      {/*<img src={mainspa(`./main1.jpg`)} alt="spa" className="imagen-main" />*/}
-      <video id="videomain" src={mainspa(`./masaje${cont}.mp4`)} className="imagen-main2" autoPlay muted ></video>
-      <div className="main-info">
+    <MainPrincipalGrid>
+      <video id="videomain" src={mainspa(`./masaje${cont}.mp4`)} className="imagen-main2" autoPlay muted></video>
+      <MainInfo >
         <h1>La mejor experiencia de belleza <br /> con <u> Sheyla Maza</u></h1>
-        <p>
+        <p className="subtitle">
           Con más de <b>10 años de experiencia</b>  Certificada, no dude en realizar
           consultas.
         </p>
-        <div className="container-buttom-main">
+        <ButtomMain>
           <BtSobremi text={"Reservar cita"} />
           <BtSobremi text={"Sobre mi"} />
-        </div>
-       <div className="buttom-info-main">
-          <InfoMain  info={"9.00 AM A 1.00 PM 3.00 PM A 7.00 PM"} icon={<IoTime className="ico-time"/> } />
-          <InfoMain  info={"JR .SOL.ORO 7028"} icon={<RiMapPin2Fill className="ico-map"/>} />
-        </div>
-      </div>
-      <div className="main-bolitas">
+        </ButtomMain>
+         <ButtomInfoMain>
+          <InfoMain  info={"9.00 AM A 1.00 PM 3.00 PM A 7.00 PM"} icon={<IoTime/> } />
+          <InfoMain  info={"JR .SOL.ORO 7028"} icon={<RiMapPin2Fill/>} />
+        </ButtomInfoMain>
+      </MainInfo>
+      <MainBolitas>
         <div style={{background:video0}} className="bol-1" onClick={()=> setCont(0)}></div>
         <div style={{background:video1}} className="bol-2" onClick={()=> setCont(1)}></div>
         <div style={{background:video2}} className="bol-3" onClick={()=> setCont(2)}></div>
         <div style={{background:video3}} className="bol-4" onClick={()=> setCont(3)}></div>
-      </div>
-    </main>
+      </MainBolitas>
+    </MainPrincipalGrid>
   );
 };
 

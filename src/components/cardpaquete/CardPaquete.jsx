@@ -1,23 +1,25 @@
 import React from "react";
 import VerMas from "../buttoms/vermas/VerMas";
+import { Colum2InfoAnimation, ColumImg, ContainerBolitas, PackNum, PlanCardGrid, TextoCardPack } from "../cssjs/CardPaquet";
 import "./CardPaquete.css"
 const CardPaquete = ({reverse,jsoninfo,img}) => {
-    const reves = reverse ? "plan-card-grid-reverse" :"plan-card-grid";
+    //const reves = reverse ? "plan-card-grid-reverse" :"plan-card-grid";
+   
   return (
-    <div className={reves}>
-      <div className="colum1-img-title">
+    <PlanCardGrid reverse={reverse}>
+      <ColumImg >
         <h1>{jsoninfo.titleimg}</h1>
-        <div className="container-img-card">
+        <div >
           <img src={img} alt="belleza" />
         </div>
-      </div>
-      <div className="colum2-grid-info">
-      <div className="colum2-info">
-        <div className="pack-num">
+      </ColumImg>
+      <Colum2InfoAnimation>
+      <div className="colum2-flex">
+        <PackNum>
           <h3>Pack</h3>
           <h2>0{jsoninfo.id}</h2>
-        </div>
-        <div className="div-bolitas">
+        </PackNum>
+        <ContainerBolitas>
           <div></div>
           <div></div>
           <div></div>
@@ -30,13 +32,13 @@ const CardPaquete = ({reverse,jsoninfo,img}) => {
           <div></div>
           <div></div>
           <div></div>
-        </div>
-        <div className="info-card-preciso">
+        </ContainerBolitas>
+        <TextoCardPack>
           <h1>{jsoninfo.titulo1}</h1>
-          <p>
+          <p >
             {jsoninfo.contenido1}
           </p>
-          <h1>{jsoninfo.titulo2}</h1>
+          <h1 >{jsoninfo.titulo2}</h1>
           <p>
             {jsoninfo.contenido2}
           </p>
@@ -44,13 +46,13 @@ const CardPaquete = ({reverse,jsoninfo,img}) => {
           <p>
            {jsoninfo.contenido3}
           </p>
-        </div>
+        </TextoCardPack>
       </div>
       <div className="info-link-buttom">
             <VerMas/>
     </div>
-        </div>
-    </div>
+    </Colum2InfoAnimation>
+    </PlanCardGrid>
   );
 };
 

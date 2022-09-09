@@ -1,11 +1,12 @@
 import React from 'react'
-import "./InfoMain.css"
+import { BtnIcon, BtnInfo, BtnInfoMain } from '../../cssjs/BtnMainInfo'
+
 const InfoMain = ({info,icon}) => {
   return (
-    <div className='info-main-container'>
-        <div className='icon-btn-main'>{icon}</div>
-        <div className='btn-info-main'><p>{info}</p></div>
-    </div>
+    <BtnInfoMain>
+        <BtnIcon >{icon}</BtnIcon>
+        <BtnInfo ><p>{info}</p></BtnInfo>
+    </BtnInfoMain>
   )
 }
 

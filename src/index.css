@@ -2,17 +2,18 @@
  margin: 0;
  padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 :root{
-  --dark:linear-gradient(90deg, #152331 0%, #000000 100%);
-  --grenyellow: greenyellow;
-  --letra-peque: white;
+  --dark:linear-gradient(90deg, #141E30 0%, #243B55 100%);
   --letra1:'Oswald';
   --letra2:'Trykker';
+  --letra3:'Mukta Vaani';
 }
+
 body{
   min-height: 100vh;
-  background: var(--dark);
-  color: var(--letra-peque);
+  background: var(--dark); /**dark por ahora pero comenzara en ligth*/
+  color: white;
 }

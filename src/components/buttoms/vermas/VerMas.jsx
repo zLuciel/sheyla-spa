@@ -1,9 +1,10 @@
 import React from 'react'
-import "./VerMas.css"
+import { BtnVerMas } from '../../cssjs/VerMas'
 const VerMas = () => {
+  
   return (
-    <button className='ver-mas-paquete'> Ver Más
-    </button>
+    <BtnVerMas> Ver Más
+    </BtnVerMas>
   )
 }
 
