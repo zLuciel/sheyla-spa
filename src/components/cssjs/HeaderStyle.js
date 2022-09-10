@@ -9,8 +9,8 @@ export const Cabezera = styled.header`
 `
 
 export const RedeSocial = styled.div`
- color: var(--grenyellow);
- *{
+ svg{
+    color: ${({theme}) => theme.textmain};
     margin-right: 10px;
  }
 `

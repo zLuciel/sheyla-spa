@@ -20,7 +20,7 @@ p{
 `
 export const ContenidoGrid = styled.div`
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-areas: "VitaminaInfo VitaminaImg";
 `
 export const VitaminaInfo = styled.div`
@@ -30,16 +30,38 @@ h1{
     background: ${({theme}) => theme.text};
      -webkit-background-clip: text;
       color: transparent;  
-    line-height: 142px;
+    line-height: 1.5;
     font-size: 5rem;
 }
 p{
-  font-family: var(--letra3);
+  font-family: var(--letra1);
   line-height: 1.5;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  max-width: 700px;
  color: ${({theme}) => theme.textpq};
+ margin-bottom: 15px;
+}
+button{
+  font-size: 1.2rem;
+  width: 157px;
+  height: 40.04px;
+  border-radius: 2px;
+  border: none;
+  background: ${({theme}) => theme.text};
+  &:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
+  &:active{
+    transform: translateY(-1px);
+  }
 }
 `
 export const VitaminaImg = styled.div`
 grid-area: VitaminaImg;
+  align-self: center;
+  justify-self: center;
+/*overflow: hidden; /*Vamos hacer que sea un slider */
+
 `

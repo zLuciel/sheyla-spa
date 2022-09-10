@@ -1,6 +1,6 @@
 import React from "react";
 import { ContainerVitamina, ContenidoGrid, TituloPrincipal, VitaminaImg, VitaminaInfo, VitaminaMargin } from "../cssjs/VitaminaStyle";
-
+import Slider from "../Slider"
 const Vitamina = () => {
   return (
     <ContainerVitamina>
@@ -23,10 +23,10 @@ const Vitamina = () => {
             duis enim velit mollit. Exercitation veniam consequat sunt nostrud
             amet.
           </p>
-          <button></button>
+          <button>Ver Más</button>
         </VitaminaInfo>
         <VitaminaImg>
-          <img src="" alt="" />
+          <Slider/>
         </VitaminaImg>
       </ContenidoGrid>
       </VitaminaMargin>
