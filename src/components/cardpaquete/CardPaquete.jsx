@@ -3,17 +3,16 @@ import VerMas from "../buttoms/vermas/VerMas";
 import { Colum2InfoAnimation, ColumImg, ContainerBolitas, PackNum, PlanCardGrid, TextoCardPack } from "../cssjs/CardPaquet";
 import "./CardPaquete.css"
 const CardPaquete = ({reverse,jsoninfo,img}) => {
-    //const reves = reverse ? "plan-card-grid-reverse" :"plan-card-grid";
    
   return (
-    <PlanCardGrid reverse={reverse}>
-      <ColumImg >
+    <PlanCardGrid>
+      <ColumImg bol={reverse}>
         <h1>{jsoninfo.titleimg}</h1>
         <div >
           <img src={img} alt="belleza" />
         </div>
       </ColumImg>
-      <Colum2InfoAnimation>
+      <Colum2InfoAnimation bol={reverse}>
       <div className="colum2-flex">
         <PackNum>
           <h3>Pack</h3>
