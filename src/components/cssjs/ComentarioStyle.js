@@ -21,6 +21,10 @@ export const CardTituloPrincipal = styled.div`
 p,h1{
     text-align: center;
 }
+p{
+    width: 500px;
+    margin: auto;
+}
 `
 export const BtnCard = styled.div`
 width: 100%;

@@ -8,17 +8,19 @@ import {
   ComentariosBg,
   ContainerComent,
 } from "./cssjs/ComentarioStyle";
-
+import Comentario from "../json/Comentario.json"
+import ButtomSlider from "./ButtomSlider";
 const Comentarios = () => {
   const SliderCard = useRef(null);
+  const CardContainers = useRef(null)
   const skip = () => {
     if (SliderCard.current.children.length > 0) {
       //**Obtenemos el primer hijo */
       const OneElement = SliderCard.current.children[0];
       //** establecemos la transiccion cada imagen*/
-      SliderCard.current.style.transition = `300ms ease-out all`;
+      SliderCard.current.style.transition = `400ms ease-out all`;
       //** tamaño de cada imagen */
-      const tamañoSlide = SliderCard.current.children[0].offsetWidth;
+      const tamañoSlide = SliderCard.current.children[0].offsetWidth + 80;
       //**movemos el slider */
       SliderCard.current.style.transform = `translateX(-${tamañoSlide}px)`;
       //** reiniciamos ala posicion 0 */
@@ -54,13 +56,13 @@ const Comentarios = () => {
 
     let TiempoCard = setInterval(()=>{
         skip();
-    },6000);
+    },5000);
     //**eliminar el intervalo cuando el usuario pasa el maus  */
-SliderCard.current.addEventListener('mouseenter',() => {
+    CardContainers.current.addEventListener('mouseenter',() => {
     clearInterval(TiempoCard);
 });
 //**volvemos a reanudar */
-SliderCard.current.addEventListener("mouseleave",()=>{
+CardContainers.current.addEventListener("mouseleave",()=>{
     TiempoCard = setInterval(()=>{
         skip();
     },5000)
@@ -78,21 +80,12 @@ SliderCard.current.addEventListener("mouseleave",()=>{
             veniam consequat sunt nostrud amet.
           </p>
         </CardTituloPrincipal>
-        <CardConatiner>
+        <CardConatiner ref={CardContainers}>
           <BtnCard>
-            <button onClick={skip}>SOY butto</button>
-            <button onClick={back}>SOY butto</button>
+            <ButtomSlider skip={skip} back={back} />
           </BtnCard>
           <CardSilder ref={SliderCard}>
-            <Card name={"jose"} />
-            <Card name={"manuel"}/>
-            <Card name={"pepe"}/>
-            <Card name={"jjareth"}/>
-            <Card name={"MARISOL"}/>
-            <Card name={"ESTEFANI"}/>
-            <Card name={"Diana"}/>
-            <Card name={"Cielo"}/>
-            <Card name={"Remo"}/>
+            {Comentario.map(list => <Card key={list.id} name={list.name} foto={list.foto}  comentario={list.comentario} />)}
           </CardSilder>
         </CardConatiner>
       </ContainerComent>

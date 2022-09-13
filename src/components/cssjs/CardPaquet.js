@@ -5,12 +5,11 @@ export const PlanCardGrid = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "titleimg infocard";
- /* grid-template-areas: ${({ reverse }) =>reverse ? "infocard titleimg" : "titleimg infocard"};*/
    /* gap: 40px;*/ //** prpdoia usarlo para reponsive*/
-
+   
 `;
 export const ColumImg = styled.div`
-  grid-area: titleimg;
+  grid-area:   ${(props) => (props.bol ? "infocard" : "titleimg")};
   justify-self: center; //** deberia estar en center pero quiero probar end serviria para responsive*/
   align-self: center;
   h1 {
@@ -33,7 +32,7 @@ export const ColumImg = styled.div`
   }
 `;
 export const Colum2InfoAnimation = styled.div`
-  grid-area: infocard;
+  grid-area:   ${(props) => (props.bol ? "titleimg" : "infocard")};
   justify-self: center; //** igual este deberia ser center xd pero start por responsive */
   align-self: center;
   .colum2-flex {
