@@ -8,7 +8,7 @@ flex-direction: column;
 align-items: center;
 min-width: 290px;
 min-height: 290px;
-background: linear-gradient(90deg, #141E30 0%, #243B55 100%);
+background: ${({theme}) => theme.bg};
 border: 3px solid rgba(0, 0, 0, 0.25);
 box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
 backdrop-filter: blur(40px);
@@ -39,7 +39,7 @@ export const CardFlexStart = styled.div`
 
 display: flex;
 li{
-    color:  ${({theme}) => theme.textmain};
+    color:  ${({theme}) => theme.svg};
     list-style: none;
     margin: 5px 10px;
 }

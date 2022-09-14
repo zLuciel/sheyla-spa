@@ -4,8 +4,10 @@ export const Cabezera = styled.header`
     font-family: var(--letra1);
     width: 100%;
     height: 60px;
-    background: rgba(0, 0, 0, 0.438);
-    position: sticky;
+    background: ${({theme}) => theme.bg};
+    position: fixed;
+    z-index: 999999999;
+    /*top: 0;*/
 `
 
 export const RedeSocial = styled.div`

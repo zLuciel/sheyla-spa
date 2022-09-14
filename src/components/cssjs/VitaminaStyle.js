@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerVitamina = styled.div`
   width: 100%;
+  background:  ${({theme}) => theme.bg};
   //**aqui ira el backgraound dark o depende */
 `
 export const VitaminaMargin = styled.div`

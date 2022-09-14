@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ComentariosBg = styled.div`
 width: 100%;
+background: ${({theme}) => theme.bg};
 `
 export const ContainerComent = styled.div`
 width: 80%;

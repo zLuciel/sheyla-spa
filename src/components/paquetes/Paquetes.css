@@ -1,6 +1,0 @@
-.container-paquete{
- width: 78%;/**100% en o 98% responsive%*/
- margin: auto;
- position: relative;
- font-family: var(--letra1);
-}
