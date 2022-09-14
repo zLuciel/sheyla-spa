@@ -1,5 +1,6 @@
 const LightTheme ={
-    textpq: "black",
+    textpq: "white",
+    svg:" #D4FC79",
     text : "linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);",
     hover: "linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%)",
     bg: "linear-gradient(90deg, #7474BF 0%, #348AC7 100%)",
@@ -14,6 +15,7 @@ const DarkTheme ={
     bg: "linear-gradient(90deg, #141E30 0%, #243B55 100%)",
     textmain: "greenyellow",
     btninfomain:"#2C2727",
+    svg:" #FDFC47",
 };
 
 const Themes = {

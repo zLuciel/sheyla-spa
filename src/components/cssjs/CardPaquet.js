@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const PlanCardGrid = styled.div`
-  margin-bottom: 40px;
+/*border: 1px solid red;*/
+  height: 500px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "titleimg infocard";

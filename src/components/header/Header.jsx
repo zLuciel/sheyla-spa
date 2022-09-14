@@ -4,14 +4,21 @@ import {BsInstagram} from "react-icons/bs"
 import {FaFacebookSquare,FaTiktok} from "react-icons/fa"
 import logo from "../../assets/img/Sheyla-logo.png"
 import {Cabezera,RedeSocial} from "../cssjs/HeaderStyle"
- const Header = () => {
+ const Header = ({theme,setTheme}) => {
+    const changeMode = () => {
+        if(theme === "light"){
+            setTheme("dark");
+        }else{
+            setTheme("light");
+        }
+    }
   return (
       <Cabezera>
         <nav className="nav">
             <div className="nav-logo">
            <img src={logo} alt="logo" />
            <label className="switch" >
-            <input type="checkbox"/>
+            <input type="checkbox" onClick={changeMode}/>
          <span className="slider"></span>
          </label>
             </div>
